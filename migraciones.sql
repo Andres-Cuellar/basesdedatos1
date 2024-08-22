@@ -2,9 +2,7 @@ CREATE DATABASE tienda_db;
 
 SHOW DATABASES;
 
-USE tienda_db
-
-CREATE TABLE tipo_cliente (
+USE tienda_db CREATE TABLE tipo_cliente (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(255)
 );
@@ -78,7 +76,7 @@ CREATE TABLE categoria (
     nombre VARCHAR(255),
     tipo VARCHAR(255),
     unidad INT,
- 	FOREIGN KEY (unidad) REFERENCES unidad(id)
+    FOREIGN KEY (unidad) REFERENCES unidad(id)
 );
 
 CREATE TABLE producto (
@@ -113,4 +111,3 @@ CREATE TABLE detalle_venta (
     FOREIGN KEY (venta) REFERENCES venta(id),
     FOREIGN KEY (producto) REFERENCES producto(id)
 );
-

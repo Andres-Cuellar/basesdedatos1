@@ -119,12 +119,23 @@ values
 insert into
   categoria (nombre, tipo, unidad)
 values
-  ('Lácteos', 'Productos derivados de la leche, como leche, queso y yogurt.'),
-('Aceites', 'Aceites comestibles y de cocina.'),
-('Granos', 'Productos como arroz, maíz y otros granos.'),
-('Abarrotes', 'Productos de despensa y artículos de uso diario.'),
-('Higiene', 'Productos de cuidado personal y limpieza.');
-
+  (
+    'Lácteos',
+    'Productos derivados de la leche, como leche, queso y yogurt.'
+  ),
+  ('Aceites', 'Aceites comestibles y de cocina.'),
+  (
+    'Granos',
+    'Productos como arroz, maíz y otros granos.'
+  ),
+  (
+    'Abarrotes',
+    'Productos de despensa y artículos de uso diario.'
+  ),
+  (
+    'Higiene',
+    'Productos de cuidado personal y limpieza.'
+  );
 
 -- Insert sample data into producto
 insert into
